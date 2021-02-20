@@ -1,14 +1,19 @@
 {
-  "name": "sdistro-sop-ui",
+  "name": "@seemusic/sdistro-sop-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "看见音乐 SOP 系统自定义 UI 组件",
+  "author": "cuiguojie@kanjian.com",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name sdistro-sop-ui --dest lib packages/index.js"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "core-js": "^3.6.5"
+  },
+  "peerDependencies": {
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -23,5 +28,15 @@
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/SeeMusic/sdistro-sop-ui/issues"
+  },
+  "homepage": "https://github.com/SeeMusic/sdistro-sop-ui",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeeMusic/sdistro-sop-ui.git"
+  },
+  "main": "lib/sdistro-sop-ui.common.js"
 }
