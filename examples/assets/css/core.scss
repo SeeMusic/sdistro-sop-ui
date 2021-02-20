@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@import "reset";
+@import 'color';
+
+.clearfix {
+  &:after{
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  *zoom:1;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.highlight {
+  color: $blue;
+}
+
+// TODO 移出
+.sd-form-item--more {
+  font-size: 12px;
+
+  a {
+    font-weight: normal!important;
+  }
+}
+
+.sd-form-input-list {
+  display: flex;
+  margin-top: 8px;
+
+  .sd-form-input-list__field {
+    flex: 1;
+  }
+
+  .sd-form-input-list__opt {
+    margin-left: 16px;
+    width: 28px;
+    line-height: 32px;
+    font-size: 12px;
+  }
+
+  a:hover {
+    color: $blue;
+  }
+}
