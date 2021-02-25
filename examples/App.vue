@@ -21,6 +21,7 @@
       <SopStatusIcon color="blue" />
       <SopStatusIcon color="yellow" />
       <SopStatusIcon color="green" />
+      <SopStatusIcon color="red" />
     </SopCard>
 
     <SopCard
@@ -125,6 +126,48 @@
         </SopDataTableItem>
       </SopDataTable>
     </SopCard>
+
+    <SopCard title="原信息">
+      <SopMetaInfo>
+        <span>信息1</span>
+        <span>信息2</span>
+      </SopMetaInfo>
+    </SopCard>
+
+    <SopCard title="业务对象基础信息">
+      <SopDataTable>
+        <SopDataTableItem
+          label="无附加操作"
+        >
+          <SopBasicInfo
+            type="album"
+            title="对象标题"
+          >
+            <span>信息1</span>
+            <span>信息2</span>
+          </SopBasicInfo>
+        </SopDataTableItem>
+        <SopDataTableItem
+          label="有附加操作"
+        >
+          <SopBasicInfo
+            type="album"
+            title="对象标题"
+          >
+            <span>文本信息</span>
+
+            <span>
+              <SopStatusIcon color="red" />
+              <em>状态文本</em>
+            </span>
+
+            <template #opt>
+              <a href="">删除</a>
+            </template>
+          </SopBasicInfo>
+        </SopDataTableItem>
+      </SopDataTable>
+    </SopCard>
   </div>
 </template>
 
@@ -141,5 +184,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
+}
+
+p {
+  margin: 0;
 }
 </style>
