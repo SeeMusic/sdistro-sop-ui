@@ -7,9 +7,7 @@
     <em
       v-if="text"
       class="sop-status__text"
-    >
-      {{ text }}
-    </em>
+    >{{ text }}</em>
   </span>
 </template>
 

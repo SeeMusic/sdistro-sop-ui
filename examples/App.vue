@@ -16,12 +16,22 @@
     </SopCard>
 
     <SopCard title="状态 icon">
-      <SopStatusIcon color="all" />
-      <SopStatusIcon color="gray" />
-      <SopStatusIcon color="blue" />
-      <SopStatusIcon color="yellow" />
-      <SopStatusIcon color="green" />
-      <SopStatusIcon color="red" />
+      <SopStatus
+        color="all"
+        text="全部状态"
+      />
+      <SopStatus
+        color="gray"
+        text="失败"
+      />
+      <SopStatus
+        color="blue"
+      />
+      <SopStatus
+        color="yellow"
+      />
+      <SopStatus color="green" />
+      <SopStatus color="red" />
     </SopCard>
 
     <SopCard
