@@ -1,6 +1,6 @@
 {
   "name": "@seemusic/sdistro-sop-ui",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": false,
   "description": "看见音乐 SOP 系统自定义 UI 组件",
   "author": "cuiguojie@kanjian.com",
@@ -22,6 +22,8 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-airbnb": "^5.0.2",
     "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
@@ -38,5 +40,10 @@
     "type": "git",
     "url": "git+https://github.com/SeeMusic/sdistro-sop-ui.git"
   },
-  "main": "lib/sdistro-sop-ui.common.js"
+  "main": "lib/sdistro-sop-ui.common.js",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }

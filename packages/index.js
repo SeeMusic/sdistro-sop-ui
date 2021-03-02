@@ -2,7 +2,8 @@ import Card from './card';
 import Cover from './cover';
 import DataTable from './datatable';
 import DataTableItem from './datatable-item';
-import StatusIcon from './status-icon';
+import StatusIcon from './status-icon'; // Deprecated
+import Status from './status';
 
 import MetaInfo from './meta-info';
 import BasicInfo from './basic-info';
@@ -16,6 +17,7 @@ const components = [
   StatusIcon,
   MetaInfo,
   BasicInfo,
+  Status,
 ];
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，那么所有的组件都会被注册
@@ -40,6 +42,7 @@ export default {
   // 以下是具体的组件列表
   DataTable,
   DataTableItem,
+  Status,
   StatusIcon,
   Card,
   Cover,
