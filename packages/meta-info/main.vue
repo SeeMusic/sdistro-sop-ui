@@ -10,9 +10,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .sop-meta-info {
   display: flex;
+  flex-wrap: wrap;
   color: #999;
 
   & > span {

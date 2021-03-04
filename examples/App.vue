@@ -162,17 +162,20 @@
         >
           <SopBasicInfo
             type="album"
-            title="对象标题"
+            :title="`White Noise Sleep: Loopable White Noise For Deep Sleep
+              \n Aid, Sounds For Sleep, Sleeping Music and Background Noise
+              \n To Sleep Through The Night`"
           >
-            <span>文本信息</span>
+            <span
+              v-html="`White Noise Sleep: Loopable White Noise For Deep Sleep
+              \n Aid, Sounds For Sleep, Sleeping Music and Background Noise
+              \n To Sleep Through The Night`"
+            />
 
-            <span>
-              <SopStatusIcon color="red" />
-              <em>状态文本</em>
-            </span>
+            <span>131331313</span>
 
             <template #opt>
-              <a href="">删除</a>
+              <a href="">删除链接</a>
             </template>
           </SopBasicInfo>
         </SopDataTableItem>
@@ -194,6 +197,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
+  line-height: 1.5;
 }
 
 p {

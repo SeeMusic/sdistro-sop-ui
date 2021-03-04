@@ -9,12 +9,14 @@
       :height="72"
       :src="cover"
     />
-    <p class="sop-basic-info__title">
-      {{ title }}
-    </p>
-    <SopMetaInfo>
-      <slot />
-    </SopMetaInfo>
+    <div class="sop-basic-info__content">
+      <p class="sop-basic-info__title">
+        {{ title }}
+      </p>
+      <SopMetaInfo>
+        <slot />
+      </SopMetaInfo>
+    </div>
 
     <div
       v-if="isOperationShow"
@@ -58,28 +60,32 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .sop-basic-info {
-  position: relative;
+  display: flex;
   margin-bottom: 16px;
-  padding: 0 0 0 88px;
   min-height: 72px;
 }
 
 .sop-basic-info__cover {
-  position: absolute;
-  left: 0;
-  top: 0;
+  margin-right: 16px;
+}
+
+.sop-basic-info__content {
+  flex: 1;
+  min-width: 0;
 }
 
 .sop-basic-info__title {
-  line-height: 36px;
   font-size: 24px;
+  font-weight: 600;
+  height: 36px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .sop-basic-info__opt {
-  position: absolute;
-  right: 0;
-  top: 0;
+  margin-left: 16px;
 }
 </style>
