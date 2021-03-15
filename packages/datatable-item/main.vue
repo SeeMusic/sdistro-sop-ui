@@ -41,12 +41,13 @@ export default {
       default: true,
     },
   },
+  inject: ['cols'],
   computed: {
     isOperationShow() {
       return this.$slots.opt;
     },
     itemWidthStyle() {
-      const { cols } = this.$parent;
+      const { cols } = this;
       const percentage = 100 / cols;
       let width = '100%';
 

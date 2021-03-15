@@ -36,6 +36,11 @@ export default {
       default: 2,
     },
   },
+  provide() {
+    return {
+      cols: this.cols,
+    };
+  },
 };
 </script>
 
