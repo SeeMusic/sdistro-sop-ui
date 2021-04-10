@@ -23,6 +23,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/css/_color.scss';
+
 .sop-icon-status {
   position: relative;
   display: inline-block;

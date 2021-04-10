@@ -64,6 +64,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/css/_color.scss';
+
 .sop-data-table-item {
   display: flex;
   align-items: baseline;
