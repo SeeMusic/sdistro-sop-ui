@@ -37,7 +37,7 @@ export default {
       default: 'album',
       validator(value) {
         return [
-          'album', 'track',
+          'album', 'track', 'cp', 'contract', 'dsp', 'customer',
           'playlist', 'playlist-project', 'open-playlist',
         ].indexOf(value) !== -1;
       },
